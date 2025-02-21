@@ -1,8 +1,6 @@
-# web-dev-starter
+# M6.2 Lab
 
-This is a starter project for web development with no frameworks and minimal
-dependencies. It is intended to be a starting point for web development projects
-that are written in plain HTML, CSS, and JavaScript.
+In this project, I created a letterhead template using HTML, CSS, and JavaScript. The design involved fixing background images to the top and bottom of the letter, with a semi-transparent gradient for texture. I added a white background, a 1mm solid border, and included a logo with a cross-browser-compatible drop shadow. The body of the page was designed in a two-column format, and I implemented interactivity with a radio button and button, where clicking the button displays the selected radio button’s text. The goal was to combine both creative design and basic web development skills.
 
 ## Getting Started
 
