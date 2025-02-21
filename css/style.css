@@ -1,4 +1,91 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ccc;
+}
+
+article {
+  padding-top: 60mm; /* Pushes content lower */
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+  background: white;
+  border-top: 1mm solid #900;
+  border-bottom: 1mm solid #900;
+  background-image: 
+    url("../img/top-image.png"), 
+    url("../img/bottom-image.png"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent 20%, transparent 80%, rgba(0, 0, 0, 0.05));
+  background-position: 
+    top center, 
+    bottom center, 
+    center;
+  background-repeat: no-repeat;
+  background-size: contain, contain, cover;
+}
+
+.content {
+  display: flex;
+  padding: 20mm 20mm 20mm 20mm; /* Moves text further down */
+  gap: 10mm;
+  color: #222;
+}
+
+.left-column, .right-column {
+  width: 50%;
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+  font-style: normal;
+  color: #222;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: #222;
+  text-shadow: none;
+  background: url("../img/logo.png") no-repeat center;
+  background-size: contain;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Initial drop shadow */
+}
+
+/* Form styling */
+form {
+  margin-top: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #900;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #700;
 }
